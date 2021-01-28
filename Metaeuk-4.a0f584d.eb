@@ -1,0 +1,29 @@
+##
+# This is an easyconfig file for EasyBuild, see https://github.com/easybuilders/easybuild
+#
+# Copyright::
+# Authors::sabryr@gmail.com
+# License::   3-clause BSD
+##
+
+easyblock = 'Conda'
+
+name = "Metaeuk"
+version = "4.a0f584d"
+
+homepage = "http"
+description = """ A """
+
+toolchain = SYSTEM
+
+builddependencies = [('Anaconda3', '5.3.0')]
+
+environment_file = "/home/sabryr/easybuild/metaeuk.yml"
+
+#sanity_check_paths = {
+#    'files': ["bin/conda"],
+#    'dirs': []
+#}
+
+moduleclass = 'tools'
+
